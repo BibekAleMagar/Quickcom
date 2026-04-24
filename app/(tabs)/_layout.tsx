@@ -40,9 +40,10 @@ export default function TabLayout() {
     <SafeAreaView className="flex-1 px-4 py-2">
       <Tabs screenOptions={{ headerShown: false }}>
         <Tabs.Screen
-          name="home"
+          name="index"
           options={{
             title: "Home",
+            headerShown: true,
             header: () => <Header />,
             tabBarIcon: ({ color }) => (
               <AntDesign name="home" size={24} color={color} />
@@ -50,7 +51,7 @@ export default function TabLayout() {
           }}
         />
         <Tabs.Screen
-          name="index"
+          name="product"
           options={{
             title: "Products",
             headerShown: false,
